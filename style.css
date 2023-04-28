@@ -33,10 +33,6 @@ z-index: 100;
 	font-weight: 600;
 }
 
-.active{
-	color: pink;
-}
-
 .navbar a {
 	font-size: 16px;
 	text-decoration: none;
