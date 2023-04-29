@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600; 700; 800; 900&display=swap');
-}
+
 
 *{
 margin: 0;
@@ -13,13 +13,14 @@ font-family: 'Poppins', sans-serif;
 background:url('images/bg_ebrahimjoy.jpg') no-repeat;
 color: #ededed;
 background-size: cover;
-background-position: center;	
+background-position: center right;	
+background-attachment: fixed;
 }
 
 .header {
-position: fixed;
+/* position: fixed;
 top:0;
-left: 0;
+left: 0; */
 width: 100%;
 padding: 26px;
 text-align: center;
@@ -46,7 +47,7 @@ z-index: 100;
 	color: #00abf0;
 }
 .home {
-	height: 100vh;
+	/* height: 100vh; */
 	
 	display: flex;
 	align-items: center;
@@ -97,7 +98,7 @@ z-index: 100;
 	border: 2px solid #00abf0;
 	border-radius: 8px;
 	font-size: 16px;
-	color: $081b29;
+	color: #081b29;
 	text-decoration: none;
 	font-weight: 600;
 	letter-spacing: 1px;
@@ -152,17 +153,7 @@ z-index: 100;
 	justify-content: center;
 	align-items: center;
 	display: inline-flex;
-	width: 40px;
-	height: 40px;
-	background: transparent;
-	border: 2px solid #00abf0;
-	border-radius: 50%;
-	font-size: 20px;
-	color: #00abf0;
-	text-decoration: none;
-	z-index: 1;
-	overflow: hidden;
-	transition: .5s;
+	
 }
 
 .home-sci a:hover {
@@ -377,7 +368,52 @@ button:hover
 
 
 
-/* Project  */
+/* Footer Top  */
+.footer-top {
+	height: 100px;
+	width: 100%;
+}
+
+
+/* Footer  */
+footer {
+	position: fixed;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+	background-color: #121010;
+	z-index: 100;
+}
+.footer-soicail-button{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+	justify-content: center;
+    align-items: center;
+    height: 100px;
+
+
+}
+.footer-soicail-button li a{
+	width: 40px;
+	height: 40px;
+	background: transparent;
+	border: 2px solid #00abf0;
+	border-radius: 50%;
+	font-size: 20px;
+	color: #00abf0;
+	text-decoration: none;
+	z-index: 1;
+	overflow: hidden;
+	transition: .5s;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+	margin-right: 10px;
+
+
+}
 
 
 
