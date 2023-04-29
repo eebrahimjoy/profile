@@ -47,8 +47,12 @@ z-index: 100;
 	color: #00abf0;
 }
 .home {
+<<<<<<< HEAD
 	/* height: 100vh; */
 	
+=======
+	height: 100vh;
+>>>>>>> main
 	display: flex;
 	align-items: center;
 	padding: 0 10%;
@@ -140,15 +144,16 @@ z-index: 100;
 	width: 100%;
 }
 
-.home-sci {
+.footer {
 	position: absolute;
 	bottom: 40px;
 	width: 220px;
+
 	justify-content: space-between;
 
 }
 
-.home-sci a {
+.footer a {
 	position: relative;
 	justify-content: center;
 	align-items: center;
@@ -156,11 +161,11 @@ z-index: 100;
 	
 }
 
-.home-sci a:hover {
+.footer a:hover {
 	color: #081b29;
 }
 
-.home-sci a::before{
+.footer a::before{
 	content: '';
 	position: absolute;
 	top: 0;
@@ -173,13 +178,51 @@ z-index: 100;
 
 }
 
-.home-sci a:hover::before{
+.footer a:hover::before{
 	width: 100%;
 }
 
 
 
-/* -----------------------------------------Home-----------------------------------------  */
+/* -----------------------------------------about-----------------------------------------  */
+
+.about {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	padding: 0 10%;
+}
+
+.about-content {
+	max-width: 70%;
+}
+
+.about-content p {
+	font-size: 16px;
+	line-height: 1.2;
+
+}
+
+/* -----------------------------------------project-----------------------------------------  */
+
+.project {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	padding: 0 10%;
+}
+
+.project-content {
+	max-width: 70%;
+}
+
+.project-content p {
+	font-size: 16px;
+	line-height: 1.2;
+
+}
+
+
 
 
 
