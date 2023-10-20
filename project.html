@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <title>ebrahimjoy(mobile-developer)</title>
-	<link rel = "icon" href = "images/profile_photo.png" type = "image/x-icon">
+    <link rel = "icon" href = "images/profile_photo.png" type = "image/x-icon">
     <link rel="stylesheet" type="text/css" href="style.css" />
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
@@ -15,291 +15,344 @@
   </head>
 
 <body class="body">
-	<header class="header">
-		<!-- <a href="#" class="logo"></a> -->
-		<nav class="navbar">
-			<a href="index.html">Home</a>
-			<a href="about.html">About Me</a>
-			<a style="color: #00abf0" href="project.html">Project</a>
-			<a href="experience.html">Experience/Skills</a>
-			<a href="achievement.html">Achievement</a>
-			<a href="contact.html">Contact Me</a>
-		</nav>
-	</header>
-	<section class="project">
-		<div class="project-content">
-			<!-- -------------------------01---------------------------- -->
-			<h1>Galaxy Auto Auction</h1>
-			<p>Galaxy Auto Auction Mobile App is a user-friendly platform designed to provide users with access to
-				auctioned vehicles. Users can create their profile, reset their password, and upload necessary documents
-				for verification purposes. The app allows users to bid online and offline, and to view a list of their
-				won, lost, and pending bids. Users can also view their account information, including their payment
-				history and credit balance. The app provides users with various search options, including saved searches
-				and a watchlist feature. The search function allows users to find vehicles based on specific criteria,
-				such as make, model, year, and location. The auction list view also includes a calendar, allowing users
-				to easily view upcoming auctions and plan their bidding strategy accordingly/p>
-			<h1>Technology/skills used:</h1>
-			
-			<ul>
-				<li>Built with Flutter, a popular framework for building mobile apps, and uses Dart as the primary
-					programming language</li>
-				<li>Utilizes Pusher to connect with the server and FCM for notifications</li>
-				<li>Crashlytic is used to manage live app maintenance and handle errors</li>
-				<li>Uses Shared Pref for session management and Image Picker/File Picker for uploading photos and
-					documents</li>
-				<li>User-friendly design with Tabbar and Refresh Indicator for swipe refresh</li>
-				<li>Getx is used for managing the app's state</li>
-				<li>Dio is used for handling network calls and APIs</li>
-				<li>Implements the MVC pattern for organizing the codebase</li>
-				<li>AudioPlayer for live auction notifications, such as auction start, end, bonus time, won, lost, etc
-				</li>
-				<li>Set timer for every cycle of the auction</li>
-				<li>Periodically syncs offline bids with the server to ensure that the user has the latest information
-				</li>
-				<li>Filter-wise search, such as make, model, year, location, trains, cylinder, etc., with the ability to
-					select multiple options for searching</li>
-				<li>Saved search system and watchlist for convenience</li>
-				<li>Vehicle image view with zooming and sliding facility for better viewing experience<. <li>Uses Kotlin
-						and Swift for getting the timezone from the user</li>
-			</ul>
+    <header class="header">
+        <!-- <a href="#" class="logo"></a> -->
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Me</a>
+            <a style="color: #00abf0" href="project.html">Project</a>
+            <a href="experience.html">Experience/Skills</a>
+            <a href="achievement.html">Achievement</a>
+            <a href="contact.html">Contact Me</a>
+        </nav>
+    </header>
 
-			<!-- -------------------------02---------------------------- -->
-			<h1>Olfat Shipping</h1>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apps Showcase</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin-left: 75px;
+            margin-right: 75px;
+            padding-left: 75px;
+            padding-left: 75px;
+        }
 
-			<div class="app-preview-row-container">
-				<img class="app-preview-imag" height="400" src="images/olfat_playstore.png">
-				<img class="app-preview-imag" height="400" src="images/olfat_appstore.png">
-			</div>
-			<p> <a href="https://play.google.com/store/apps/details?id=com.olfat.shipping">Play Store/a></p>
-			<p> <a href="https://apps.apple.com/us/app/olfat-shipping/id6446201348">App Store</a></p>
-			<p>Shipping service tracking: Users can track the status of their shipping service through the app,
-				including the location of the shipment and estimated delivery date. Payment status tracking: Users can
-				view the status of their payment for the shipping service. Container tracking: Users can track the
-				status of their container shipment, including the location and estimated delivery date. Contacting
-				customer support: Users can contact customer support through email or phone for any issues or concerns.
-				Two user roles: Members can view their own shipping status, while admins can view the status of all
-				members. Offline registration process: Users can obtain an account by visiting the office and providing
-				necessary documents for validation</p>
-			<h1>Technology/skills used:</h1>
-			<ul>
-				<li>Built with Flutter/Dart</li>
-				<li>User-friendly UI</li>
-				<li>FCM for notification</li>
-				<li>Firebase Crashlytics for app maintenance</li>
-				<li>Handling network images, email, dialing, and URL launching</li>
-				<li>Expandable list for showing shipping prices</li>
-				<li>MVC pattern for code structure</li>
-				<li>Git for version control
-				<li>GetX for state management</li>
-				<li>Integration with 20+ APIs</li>
-				<li>Dio for network calling/API</li>
-				<li>Carousel Slider for vehicle images</li>
-			</ul>
+        h1 {
+            color: #4285f4;
+        }
 
-			<!-- -------------------------03---------------------------- -->
-			<h1>dNothi System</h1>
+        h2 {
+            color: #34a853;
+        }
 
-			<div class="app-preview-row-container">
-				<img class="app-preview-imag" height="400" src="images/dNothi_playstore.png">
-				<img class="app-preview-imag" height="400" src="images/dNothi_appstore.png">
-			</div>
-			<p> <a href="https://play.google.com/store/apps/details?id=com.tappware.enothipro">Play Store</a></p>
-			<p> <a href="https://apps.apple.com/us/app/d-nothi/id1574562806">App Store</a></p>
-			<p>dNothi app is the application of information and communication technology (ICT) for delivering government
-				services, exchange of information, communication transactions, integration of various stand-alone
-				systems and services between government-to-citizen [G2CJ, government-to-business (CZB),
-				government-to-government CG2G), government-to-employees (G2E) as well as back-office processes and
-				interactions within the entire government framework</p>
-			<h1>Technology/skills used:</h1>
-			<ul>
-				<li>Built with Flutter/Dart</li>
-				<li>Dart language for programming</li>
-				<li>Shared Preferences for session management
-				<li>Http for accessing networking/APIs
-				<li>FCM for notification</li>
-				<li>Firebase Crashlytics for app maintenance</li>
-				<li>MVC pattern for code structure</li>
-				<li>Git for version control
-				<li>GetX for state management</li>
-				<li>Integration with 200+ APIs</li>
-				<li>Image Picker for capturing and accessing gallery to upload profile photo
-				<li>Html Editor for formatting text in certain areas of the app
-				<li>File Picker to upload documents such as pdf, png, jpg, etc.
-				<li>Flutter Easyloading for displaying loading animations
-				<li>Intl for internationalization and localization
-				<li>Cached Network Image for efficiently displaying images from URLs
-				<li>Path Provider for accessing device file system
-				<li>Webview Flutter for displaying web content within the app
-				<li>Permission Handler for requesting device permissions
-				<li>Device Info Plus for accessing device information
-				<li>Android Path Provider for accessing Android file system
-				<li>Share Plus for sharing content from the app
-				<li>Url Launcher for launching external URLs
-				<li>Fl Chart for displaying charts and graphs
-				<li>Syncfusion Flutter PDF Viewer for displaying PDF documents
-				<li>Carousel Slider for displaying images in a carousel
-				<li>Fluttertoast for displaying toasts/alerts
-				<li>Flutter InAppWebView for displaying web content within the app
-				<li>Marquee for scrolling text animations
-				<li>Image Cropper for cropping images
-				<li>Flutter HTML for rendering HTML content within the app
-				<li>Flutter HTML Table for displaying tables in HTML content
-				<li>Upgrader for managing app updates and upgrades.
-			</ul>
+        p {
+            margin-bottom: 20px;
+        }
+         .screenshots img {
+            max-width: 18%;
+            height: auto;
+            margin-top: 5px;
+        }
+    </style>
+</head>
 
-			<!-- -------------------------04---------------------------- -->
-			<h1>Primacare365</h1>
+<body>
 
-			<div class="app-preview-row-container">
-				<img class="app-preview-imag" height="400" src="images/primacare_playstore.png">
-			</div>
-			<p> <a href="https://play.google.com/store/apps/details?id=com.tappware.primacare">Play Store</a></p>
-			<p>PrimaCare365 is a healthcare app that provides convenient and easy access to healthcare services. With
-				hundreds of doctors available 24 hours a day, users can book appointments quickly and receive prompt
-				responses. The app also allows users to take health check-up questionnaires, upload prescriptions and
-				files, schedule medicine reminders, and find doctors and clinics. Additionally, users can choose to
-				schedule appointments via video, chat, or in-person consultations, all while maintaining their personal
-				profile information. PrimaCare365 brings the power of healthcare right to the palm of your hand,
-				ensuring that users can take control of their daily wellness with ease</p>
-			<h1>Technology/skills used:</h1>
-			<ul>
-				<li>PrimaCare365 uses Flutter for app development</li>
-				<li>Local notifications are used for medicine schedule</li>
-				<li>MVC is used for software architecture</li>
-				<li>Git is used for source code management</li>
-				<li>Over 25 APIs are integrated for various features</li>
-				<li>The Provider package is used for state management</li>
-				<li>Http for network calling</li>
-			</ul>
+    <!-- Project 01 -->
 
-			<!-- -------------------------05---------------------------- -->
-			<h1>eNothi System - Android</h1>
+    <h1>Galaxy Auction</h1>
+    <h4>Platform: iOS and Android - Flutter</h4>
+    <p>
+        Galaxy Auto Auction Mobile App is a user-friendly platform designed to provide users with access to
+        auctioned vehicles. Users can create their profile, reset their password, and upload necessary documents
+        for verification purposes. The app allows users to bid online and offline, and to view a list of their
+        won, lost, and pending bids. Users can also view their account information, including their payment
+        history and credit balance. The app provides users with various search options, including saved searches
+        and a watchlist feature. The search function allows users to find vehicles based on specific criteria,
+        such as make, model, year, and location. The auction list view also includes a calendar, allowing users
+        to easily view upcoming auctions and plan their bidding strategy accordingly.
+    </p>
+    <p><strong>Technology/skills:</strong> Built with Flutter, utilizes Pusher for server connection, Crashlytics for app maintenance, Dio for network calls, and Getx for the state management.
+        <li>Built with Flutter, a popular framework for building mobile apps, and uses Dart as the primary
+                    programming language</li>
+                <li>Utilizes Pusher to connect with the server and FCM for notifications</li>
+                <li>Crashlytic is used to manage live app maintenance and handle errors</li>
+                <li>Uses Shared Pref for session management and Image Picker/File Picker for uploading photos and
+                    documents</li>
+                <li>User-friendly design with Tabbar and Refresh Indicator for swipe refresh</li>
+                <li>Getx is used for managing the app's state</li>
+                <li>Dio is used for handling network calls and APIs</li>
+                <li>Implements the MVC pattern for organizing the codebase</li>
+                <li>AudioPlayer for live auction notifications, such as auction start, end, bonus time, won, lost, etc
+                </li>
+                <li>Set timer for every cycle of the auction</li>
+                <li>Periodically syncs offline bids with the server to ensure that the user has the latest information
+                </li>
+                <li>Filter-wise search, such as make, model, year, location, trains, cylinder, etc., with the ability to
+                    select multiple options for searching</li>
+                <li>Saved search system and watchlist for convenience</li>
+                <li>Vehicle image view with zooming and sliding facility for better viewing experience<. <li>Uses Kotlin
+                        and Swift for getting the timezone from the user</li>
+            </ul>
+    </p>
+    <p><strong>Links:</strong> <a style="color: green;" href="https://play.google.com/store/apps/details?id=com.galaxystarinfotech.galaxyusedcar">Play Store</a> / <a style="color: green;" href="https://apps.apple.com/vn/app/galaxy-used-car/id6464589948">App Store</a></p>
+    <div class="screenshots">
+            <img src="images/galaxy-auction/screenshot1.jpeg" alt="Screenshot 1">
+            <img src="images/galaxy-auction/screenshot2.jpeg" alt="Screenshot 2">
+            <img src="images/galaxy-auction/screenshot3.jpeg" alt="Screenshot 3">
+            <img src="images/galaxy-auction/screenshot4.jpeg" alt="Screenshot 4">
+            <img src="images/galaxy-auction/screenshot5.jpeg" alt="Screenshot 5">
+    
+        </div>
 
-			<div class="app-preview-row-container">
-				<img class="app-preview-imag" height="400" src="images/eNothi_playstore.png">
-			</div>
-			<p> <a href="https://play.google.com/store/apps/details?id=com.tappware.enothipro">Play Store</a></p>
-			<p>eNothi app is the application of information and communication technology (ICT) for delivering government
-				services, exchange of information, communication transactions, integration of various stand-alone
-				systems and services between government-to-citizen [G2CJ, government-to-business (CZB),
-				government-to-government CG2G), government-to-employees (G2E) as well as back-office processes and
-				interactions within the entire government framework</p>
-			<h1>eNothi is an Android application built with Native Java. The following technologies are used</h1>
-			<ul>
-				<li>Material for Android UI design with XML</li>
-				<li>Firebase FCM for notification</li>
-				<li>Pusher messaging</li>
-				<li>Room for local database management</li>
-				<li>MVVM architecture pattern</li>
-				<li>Navigational fragment for app navigation</li>
-				<li>Viewpager 2 for screen swiping</li>
-				<li>Retrofit for network communication</li>
-				<li>Gson for JSON serialization and deserialization</li>
-				<li>Okhttp for HTTP/HTTPS calls</li>
-				<li>CircleImageView for circular images</li>
-				<li>PDF Viewer for displaying PDF files</li>
-				<li>Picasso for image loading and caching</li>
-				<li>JSoup for HTML parsing</li>
-				<li>RichEditor for text editing and formatting</li>
-			</ul>
+    <!-- Project 02 -->
 
-			<!-- -------------------------06---------------------------- -->
+    <h1 style="margin-top: 10px;">Galaxy Shipping</h1>
+    <h4>Platform: iOS and Android - Flutter</h4>
+    <p>
+        Developed a comprehensive shipping management system, enabling features such as order tracking and inventory management. Ensured seamless operations for clients.
+    </p>
+    <p><strong>Technology/skills:</strong> Built with Flutter, Crashlytics for app maintenance, Dio for network calls, and Getx for the state management. </p>
+    <p><strong>Links:</strong> <a style="color: green;" href="https://play.google.com/store/apps/details?id=com.galaxystarinfotech.gwwshipping">Play Store</a> / <a style="color: green;" href="https://apps.apple.com/ae/app/galaxy-shipping/id6464596129">App Store</a></p>
+    <div class="screenshots">
+            <img src="images/galaxy-shipping/screenshot1.jpeg" alt="Screenshot 1">
+            <img src="images/galaxy-shipping/screenshot2.jpeg" alt="Screenshot 2">
+            <img src="images/galaxy-shipping/screenshot3.jpeg" alt="Screenshot 3">
+            <img src="images/galaxy-shipping/screenshot4.jpeg" alt="Screenshot 4">
+            <img src="images/galaxy-shipping/screenshot5.jpeg" alt="Screenshot 5">
+    
+        </div>
 
-			<h1>eNothi System - iOS</h1>
+     <!-- Project 03 -->
 
-			<div class="app-preview-row-container">
-				<img class="app-preview-imag" height="400" src="images/eNothi_appstore.png">
-			</div>
-			<p> <a href="https://apps.apple.com/us/app/d-nothi/id1574562806">App Store</a></p>
-			<p>eNothi app is the application of information and communication technology (ICT) for delivering government
-				services, exchange of information, communication transactions, integration of various stand-alone
-				systems and services between government-to-citizen [G2CJ, government-to-business (CZB),
-				government-to-government CG2G), government-to-employees (G2E) as well as back-office processes and
-				interactions within the entire government framework</p>
-			<h1>eNothi is an iOS application built with Native Swift. The following technologies are used</h1>
-			<ul>
-				<li>Developed an iOS mobile app using Swift for enhanced performance and flexibility</li>
-				<li>Integrated user authentication and login functionality to ensure secure access to the app's features
-				</li>
-				<li>Implemented a dashboard with dynamic counting functionality using UIKit and Core Data</li>
-				<li>Utilized the Apple Push Notification service (APNs) for delivering real-time notification alerts to
-					users</li>
-				<li>Created an open list using UITableView to display "Dak" items and enable user actions such as
-					sending and archiving</li>
-				<li>Implemented an archive feature with CoreData for efficient storage and retrieval of "Dak" history
-				</li>
-				<li>Utilized WKWebView to enable users to view web content within the app</li>
-				<li>Implemented pull-to-refresh functionality using UIRefreshControl for a smooth and responsive user
-					experience</li>
-			</ul>
-
-			<!-- -------------------------07---------------------------- -->
-
-			<h1>SEIP-TMS</h1>
+    <h1 style="margin-top: 10px;">Galaxy Export</h1>
+    <h4>Platform: iOS and Android - Flutter</h4>
+    <p>
+         Created an export management app with intuitive interfaces, streamlining documentation processes and improving communication channels between stakeholders.
+    </p>
+    <p><strong>Technology/skills:</strong> Built with Flutter, Crashlytics for app maintenance, Dio for network calls, and Getx for the state management.</p>
+    <p><strong>Links:</strong> <a style="color: green;" href="https://play.google.com/store/apps/details?id=com.galaxystarinfotech.gwwexport">Play Store</a> / <a style="color: green;" href="https://apps.apple.com/vn/app/galaxy-export/id6469032650">App Store</a></p>
+    <div class="screenshots">
+            <img src="images/galaxy-export/screenshot1.jpeg" alt="Screenshot 1">
+            <img src="images/galaxy-export/screenshot2.jpeg" alt="Screenshot 2">
+            <img src="images/galaxy-export/screenshot3.jpeg" alt="Screenshot 3">
+            <img src="images/galaxy-export/screenshot4.jpeg" alt="Screenshot 4">
+            <img src="images/galaxy-export/screenshot5.jpeg" alt="Screenshot 5">
+    
+        </div>
 
 
-			<p>TMS (Training Management System) is a platform that enables two types of users, associations and
-				institutes, to manage their training programs efficiently. Associations have the ability to view the
-				institutes under their umbrella, view training courses and trainers, and keep track of attendance and
-				scores. Institutes can manage their training courses and trainers, view attendance and scores, and
-				communicate with the association. This system helps to streamline the training management process and
-				ensures that both associations and institutes have access to the information they need to provide
-				high-quality training programs.</p>
-			<h1>TMS is an Android application built with Native Java. The following technologies are used</h1>
-			<ul>
-				<li>Java and XML for building the Android application and managing the data</li>
-				<li>RecyclerView for displaying lists of data in a flexible and efficient manner</li>
-				<li>MVVM (Model-View-ViewModel) architecture pattern to separate the user interface from the data and
-					logic, making the application more scalable and maintainable. MVVM also provides a clear separation
-					of concerns, making it easier to test and debug the application</li>
-				<li>Retrofit for making API requests to the server and handling the response data</li>
-				<li>Circular Image for displaying user profile images in a circular shape for a more aesthetic UI</li>
-				<li>Smart Dropdown for providing a more user-friendly and interactive dropdown menu experience</li>
-				<li>Calendar for displaying dates and scheduling training sessions</li>
-				Shared Preferences for storing user preferences and app settings on the device
-			</ul>
-			</ul>
+     <!-- Project 04 -->
 
-			<h1>More Applications</h1>
+    <h1 style="margin-top: 10px;">Galaxy Used Car</h1>
+    <h4>Platform: iOS and Android - Flutter</h4>
+    <p>
+        Designed and developed a user-friendly platform for buying and selling used cars. 
+    <p><strong>Technology/skills:</strong> Built with Flutter, Crashlytics for app maintenance, Dio for network calls, and Getx for the state management. </p>
+    <p><strong>Links:</strong> <a style="color: green;" href="https://play.google.com/store/apps/details?id=com.galaxystarinfotech.galaxyusedcar
+    ">Play Store</a> / <a style="color: green;" href="https://apps.apple.com/vn/app/galaxy-used-car/id6464589948">App Store</a></p>
+    <div class="screenshots">
+            <img src="images/galaxy-used-car/screenshot1.jpeg" alt="Screenshot 1">
+            <img src="images/galaxy-used-car/screenshot2.jpeg" alt="Screenshot 2">
+            <img src="images/galaxy-used-car/screenshot3.jpeg" alt="Screenshot 3">
+            <img src="images/galaxy-used-car/screenshot4.jpeg" alt="Screenshot 4">
+            <img src="images/galaxy-used-car/screenshot5.jpeg" alt="Screenshot 5">
+    
+        </div>
 
-			<p>Kenakata (Java)</p>
-			<p>CPV Mobile App (Java)</p>
-			<p>BMI (Swift)</p>
-			<p>Qarz-hasana (Dart)</p>
-			<p>eKYC (Dart)</p>
-			<p>AMMS (Dart)</p>
-			<p>Contessa(Dart)</p>
-			<p>Mingle(Dart)</p>
-		</div>
+     <!-- Project 05 -->
 
-	</section>
+    <h1 style="margin-top: 10px;">Olfat Shipping</h1>
+    <h4>Platform: iOS and Android - Flutter</h4>
+    <p>
+        Shipping service tracking: Users can track the status of their shipping service through the app,
+        including the location of the shipment and estimated delivery date. Payment status tracking: Users can
+        view the status of their payment for the shipping service. Container tracking: Users can track the
+        status of their container shipment, including the location and estimated delivery date. Contacting
+        customer support: Users can contact customer support through email or phone for any issues or concerns.
+        Two user roles: Members can view their own shipping status, while admins can view the status of all
+        members. Offline registration process: Users can obtain an account by visiting the office and providing
+        necessary documents for validation.
+    </p>
+    <p><strong>Technology/skills:</strong> Built with Flutter, Crashlytics for app maintenance, Dio for network calls, and Getx for the state management.
+        <li>User-friendly UI</li>
+                <li>FCM for notification</li>
+                <li>Firebase Crashlytics for app maintenance</li>
+                <li>Handling network images, email, dialing, and URL launching</li>
+                <li>Expandable list for showing shipping prices</li>
+                <li>MVC pattern for code structure</li>
+                <li>Git for version control
+                <li>GetX for state management</li>
+                <li>Integration with 20+ APIs</li>
+                <li>Dio for network calling/API</li>
+                <li>Carousel Slider for vehicle images</li>
+    </p>
+    <p><strong>Links:</strong> <a style="color: green;" href="https://play.google.com/store/apps/details?id=com.olfat.shipping">Play Store</a> / <a style="color: green;" href="https://apps.apple.com/us/app/olfat-shipping/id6446201348">App Store</a></p>
+    <div class="screenshots">
+            <img src="images/olfat-shipping/screenshot1.png" alt="Screenshot 1">
+            <img src="images/olfat-shipping/screenshot2.png" alt="Screenshot 2">
+            <img src="images/olfat-shipping/screenshot3.png" alt="Screenshot 3">
+            <img src="images/olfat-shipping/screenshot4.png" alt="Screenshot 4">
+            <img src="images/olfat-shipping/screenshot5.png" alt="Screenshot 5">
+    
+        </div>
 
-	<div class="footer-top"></div>
+     <!-- Project 06 -->
 
-    <footer>
-      <ul class="footer-soicail-button">
-        <li>
-          <a href="https://www.linkedin.com/in/eebrahimjoy"
-            ><i class="bx bxl-linkedin"></i
-          ></a>
-        </li>
-        <li>
-          <a href="https://gitlab.com/eebrahimjoy"
-            ><i class="bx bxl-gitlab"></i
-          ></a>
-        </li>
-        <li>
-          <a href="https://github.com/eebrahimjoy"
-            ><i class="bx bxl-github"></i
-          ></a>
-        </li>
-        <li>
-          <a href="https://www.facebook.com/eebrahimjoy/"
-            ><i class="bx bxl-facebook"></i
-          ></a>
-        </li>
-      </ul>
-    </footer>
+    <h1 style="margin-top: 10px;">Digital Nothi (D-Nothi)</h1>
+    <h4>Platform: iOS and Android - Flutter</h4>
+    <p>
+        D-Nothi allows government officers to access citizen applications and office documents for decisions and further actions. It is driving towards a paperless office for Digital Bangladesh.
+    </p>
+    <p><strong>Technology/skills:</strong> Built with Flutter, Crashlytics for app maintenance, Dio for network calls, and Getx for the state management
+<li>Built with Flutter/Dart</li>
+                <li>Shared Preferences for session management
+                <li>Http for accessing networking/APIs
+                <li>FCM for notification</li>
+                <li>Firebase Crashlytics for app maintenance</li>
+                <li>MVC pattern for code structure</li>
+                <li>Git for version control
+                <li>GetX for state management</li>
+                <li>Integration with 200+ APIs</li>
+                <li>Image Picker for capturing and accessing gallery to upload profile photo
+                <li>Html Editor for formatting text in certain areas of the app
+                <li>File Picker to upload documents such as pdf, png, jpg, etc.
+                <li>Flutter Easyloading for displaying loading animations
+                <li>Intl for internationalization and localization
+                <li>Cached Network Image for efficiently displaying images from URLs
+                <li>Path Provider for accessing device file system
+                <li>Webview Flutter for displaying web content within the app
+                <li>Permission Handler for requesting device permissions
+                <li>Device Info Plus for accessing device information
+                <li>Android Path Provider for accessing Android file system
+                <li>Share Plus for sharing content from the app
+                <li>Url Launcher for launching external URLs
+                <li>Fl Chart for displaying charts and graphs
+                <li>Syncfusion Flutter PDF Viewer for displaying PDF documents
+                <li>Carousel Slider for displaying images in a carousel
+                <li>Fluttertoast for displaying toasts/alerts
+                <li>Flutter InAppWebView for displaying web content within the app
+                <li>Marquee for scrolling text animations
+                <li>Image Cropper for cropping images
+                <li>Flutter HTML for rendering HTML content within the app
+                <li>Flutter HTML Table for displaying tables in HTML content
+                <li>Upgrader for managing app updates and upgrades.
+     </p>
+    <p><strong>Links:</strong> <a style="color: green;" href="https://play.google.com/store/apps/details?id=com.tappware.enothipro">Play Store</a> / <a style="color: green;" href="https://apps.apple.com/us/app/d-nothi/id1574562806">App Store</a></p>
+    <div class="screenshots">
+            <img src="images/dnothi/screenshot1.png" alt="Screenshot 1">
+            <img src="images/dnothi/screenshot2.png" alt="Screenshot 2">
+            <img src="images/dnothi/screenshot3.png" alt="Screenshot 3">
+            <img src="images/dnothi/screenshot4.png" alt="Screenshot 4">
+            <img src="images/dnothi/screenshot5.png" alt="Screenshot 5">
+    
+        </div>
+
+         <div class="screenshots">
+            <img src="images/dnothi/screenshot6.png" alt="Screenshot 6">
+            <img src="images/dnothi/screenshot7.png" alt="Screenshot 7">
+            <img src="images/dnothi/screenshot8.png" alt="Screenshot 8">
+            <img src="images/dnothi/screenshot9.png" alt="Screenshot 9">
+            <img src="images/dnothi/screenshot10.png" alt="Screenshot 10">
+    
+        </div>
+
+     <!-- Project 06 -->
+
+    <h1 style="margin-top: 10px;">eNothi System</h1>
+    <h4>Platform: iOS and Android - Java & Swift</h4>
+    <p>
+          eNothi app is the application of information and communication technology (ICT) for delivering government
+                services, exchange of information, communication transactions, integration of various stand-alone
+                systems and services between government-to-citizen [G2CJ, government-to-business (CZB),
+                government-to-government CG2G), government-to-employees (G2E) as well as back-office processes and
+                interactions within the entire government framework.
+    </p>
+    <p><strong>Technology/skills:</strong> Built with Java & Swift
+        <li>Material for Android UI design with XML</li>
+                <li>Firebase FCM for notification</li>
+                <li>Pusher messaging</li>
+                <li>Room for local database management</li>
+                <li>MVVM architecture pattern</li>
+                <li>Navigational fragment for app navigation</li>
+                <li>Viewpager 2 for screen swiping</li>
+                <li>Retrofit for network communication</li>
+                <li>Gson for JSON serialization and deserialization</li>
+                <li>Okhttp for HTTP/HTTPS calls</li>
+                <li>CircleImageView for circular images</li>
+                <li>PDF Viewer for displaying PDF files</li>
+                <li>Picasso for image loading and caching</li>
+                <li>JSoup for HTML parsing</li>
+                <li>RichEditor for text editing and formatting</li>
+
+                <li>Developed an iOS mobile app using Swift for enhanced performance and flexibility</li>
+                <li>Integrated user authentication and login functionality to ensure secure access to the app's features
+                </li>
+                <li>Implemented a dashboard with dynamic counting functionality using UIKit and Core Data</li>
+                <li>Utilized the Apple Push Notification service (APNs) for delivering real-time notification alerts to
+                    users</li>
+                <li>Created an open list using UITableView to display "Dak" items and enable user actions such as
+                    sending and archiving</li>
+                <li>Implemented an archive feature with CoreData for efficient storage and retrieval of "Dak" history
+                </li>
+                <li>Utilized WKWebView to enable users to view web content within the app</li>
+                <li>Implemented pull-to-refresh functionality using UIRefreshControl for a smooth and responsive user
+                    experience</li>
+            </p>
+    <p><strong>Links:</strong> <a style="color: green;" href="https://play.google.com/store/apps/details?id=com.tappware.nothipro">Play Store</a> / <a style="color: green;" href="https://apps.apple.com/ae/app/enothi/id1473688748">App Store</a></p>
+
+    
+     <!-- Project 07 -->
+
+    <h1 style="margin-top: 10px;">SEIP TMS (Training Management System)
+    </h1>
+    <h4>Platform: Android - Java</h4>
+    <p>
+        TMS (Training Management System) is a platform that enables two types of users, associations and
+        institutes, to manage their training programs efficiently. Associations have the ability to view the
+        institutes under their umbrella, view training courses and trainers, and keep track of attendance and
+        scores. Institutes can manage their training courses and trainers, view attendance and scores, and
+        communicate with the association. This system helps to streamline the training management process and
+        ensures that both associations and institutes have access to the information they need to provide
+        high-quality training programs.
+    </p>
+    <p><strong>Technology/skills:</strong> Built with Java 
+    <li>Java and XML for building the Android application and managing the data</li>
+                <li>RecyclerView for displaying lists of data in a flexible and efficient manner</li>
+                <li>MVVM (Model-View-ViewModel) architecture pattern to separate the user interface from the data and
+                    logic, making the application more scalable and maintainable. MVVM also provides a clear separation
+                    of concerns, making it easier to test and debug the application</li>
+                <li>Retrofit for making API requests to the server and handling the response data</li>
+                <li>Circular Image for displaying user profile images in a circular shape for a more aesthetic UI</li>
+                <li>Smart Dropdown for providing a more user-friendly and interactive dropdown menu experience</li>
+                <li>Calendar for displaying dates and scheduling training sessions</li>
+                <li>Shared Preferences for storing user preferences and app settings on the device</li>
+             </p>
+    <p><strong>Links:</strong> <a style="color: green;" href="https://play.google.com/store/apps/details?id=tappware.com.tms
+    ">Play Store</a>
+    <div class="screenshots">
+            <img src="images/seip/screenshot1.webp" alt="Screenshot 1">
+            <img src="images/seip/screenshot2.webp" alt="Screenshot 2">
+            <img src="images/seip/screenshot3.webp" alt="Screenshot 3">
+            <img src="images/seip/screenshot4.webp" alt="Screenshot 4">
+    
+        </div>
+
+    <h1 style="margin-top: 10px;">More Applications</h1>
+    <p>Kenakata (Java)</p>
+    <p>CPV Mobile App (Java)</p>
+    <p>BMI (Swift)</p>
+    <p>Qarz-hasana (Dart)</p>
+    <p>eKYC (Dart)</p>
+    <p>AMMS (Dart)</p>
+    <p>Contessa(Dart)</p>
+    <p>Mingle(Dart)</p>
+
+    
+
 </body>
 
 </html>
