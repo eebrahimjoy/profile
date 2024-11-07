@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ebrahimjoy(gallery)</title>
+  <link rel="icon" href="./images/profile-img.png" type="image/x-icon">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-8">
+  
+    <div class="p-8 bg-gray-100">
+        <!-- Title and Subtitle -->
+        <div class="text-center mb-12">
+          <h1 class="text-4xl font-bold text-gray-800 mb-4">Photo Gallery</h1>
+          <p class="text-lg text-gray-600">Explore a collection of beautiful and inspiring images</p>
+        </div>
+
+    </div>
+
+    <!-- Gallery Grid -->
+    <div id="gallery" class="grid grid-cols-2 md:grid-cols-5 gap-4 p-4">
+        <!-- Images will be injected here by JavaScript -->
+    </div>
+
+    <!-- Modal Structure -->
+    <div id="imageModal" class="fixed inset-0 bg-black bg-opacity-75 flex justify-center items-center hidden">
+        <div class="relative max-w-3xl w-full p-4 bg-white rounded-lg">
+            <!-- Close Button -->
+            <button id="closeModal" class="absolute top-2 right-2 text-gray-700 font-bold text-2xl">&times;</button>
+            <!-- Zoomed Image Container -->
+            <div class="overflow-hidden">
+                <img id="modalImage" src="" alt="Selected Image" class="max-w-full max-h-[80vh] cursor-zoom-in transition-transform duration-300">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Define the range for your images
+        const start = 8720;
+        const end = 8847;
+        const images = [];
+        for (let i = start; i <= end; i++) {
+            images.push(`./images/gallery/IMG_${i}.JPG`);
+        }
+
+        // Select the gallery container and modal elements
+        const galleryContainer = document.getElementById('gallery');
+        const modal = document.getElementById('imageModal');
+        const modalImage = document.getElementById('modalImage');
+        const closeModalButton = document.getElementById('closeModal');
+
+        // Generate image gallery and add click event for each image
+        images.forEach((src) => {
+            const imageDiv = document.createElement('div');
+            imageDiv.className = 'relative';
+
+            const imgElement = document.createElement('img');
+            // imgElement.className = 'h-auto max-w-full rounded-lg cursor-pointer';
+            imgElement.className = 'object-cover rounded-xl cursor-pointer';
+            imgElement.src = src;
+            imgElement.alt = 'Gallery Image';
+
+             
+            imgElement.classList.add('w-full', 'h-auto', 'max-h-64', 'sm:h-48', 'md:h-56', 'lg:h-64'); // Adjusts height for various screen sizes
+
+
+            // Open modal on image click
+            imgElement.addEventListener('click', () => {
+                modalImage.src = src;
+                modal.classList.remove('hidden');
+                modalImage.classList.remove('scale-150'); // Reset zoom
+            });
+
+            imageDiv.appendChild(imgElement);
+            galleryContainer.appendChild(imageDiv);
+        });
+
+        // Close modal functionality
+        closeModalButton.addEventListener('click', () => {
+            modal.classList.add('hidden');
+        });
+
+        // Toggle zoom on modal image click
+        modalImage.addEventListener('click', () => {
+            modalImage.classList.toggle('scale-150'); // Toggles zoom-in effect
+            modalImage.classList.toggle('cursor-zoom-out'); // Change cursor when zoomed in
+        });
+    </script>
+
+</body>
+</html>
