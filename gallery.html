@@ -8,14 +8,11 @@
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-100 p-8">
-  
     <div class="p-8 bg-gray-100">
-        <!-- Title and Subtitle -->
         <div class="text-center mb-12">
-          <h1 class="text-4xl font-bold text-gray-800 mb-4">Photo Gallery</h1>
-          <p class="text-lg text-gray-600">Explore a collection of beautiful and inspiring images</p>
+            <h1 class="text-4xl font-bold text-gray-800 mb-4">Photo Gallery</h1>
+            <p class="text-lg text-gray-600">Explore a collection of beautiful and inspiring images</p>
         </div>
-
     </div>
 
     <!-- Gallery Grid -->
@@ -28,6 +25,17 @@
         <div class="relative max-w-3xl w-full p-4 bg-white rounded-lg">
             <!-- Close Button -->
             <button id="closeModal" class="absolute top-2 right-2 text-gray-700 font-bold text-2xl">&times;</button>
+
+            <!-- Previous Button -->
+            <button id="prevImage" class="absolute left-4 top-1/2 transform -translate-y-1/2 bg-gray-700 bg-opacity-60 hover:bg-opacity-80 p-4 rounded-full text-white text-2xl font-bold hidden">
+                &#10094;
+            </button>
+
+            <!-- Next Button -->
+            <button id="nextImage" class="absolute right-4 top-1/2 transform -translate-y-1/2 bg-gray-700 bg-opacity-60 hover:bg-opacity-80 p-4 rounded-full text-white text-2xl font-bold hidden">
+                &#10095;
+            </button>
+
             <!-- Zoomed Image Container -->
             <div class="overflow-hidden">
                 <img id="modalImage" src="" alt="Selected Image" class="max-w-full max-h-[80vh] cursor-zoom-in transition-transform duration-300">
@@ -44,30 +52,31 @@
             images.push(`./images/gallery/IMG_${i}.JPG`);
         }
 
-        // Select the gallery container and modal elements
+        // Select gallery container and modal elements
         const galleryContainer = document.getElementById('gallery');
         const modal = document.getElementById('imageModal');
         const modalImage = document.getElementById('modalImage');
         const closeModalButton = document.getElementById('closeModal');
+        const prevImageButton = document.getElementById('prevImage');
+        const nextImageButton = document.getElementById('nextImage');
+        
+        let currentIndex = 0;
 
         // Generate image gallery and add click event for each image
-        images.forEach((src) => {
+        images.forEach((src, index) => {
             const imageDiv = document.createElement('div');
             imageDiv.className = 'relative';
 
             const imgElement = document.createElement('img');
-            // imgElement.className = 'h-auto max-w-full rounded-lg cursor-pointer';
             imgElement.className = 'object-cover rounded-xl cursor-pointer';
             imgElement.src = src;
             imgElement.alt = 'Gallery Image';
-
-             
-            imgElement.classList.add('w-full', 'h-auto', 'max-h-64', 'sm:h-48', 'md:h-56', 'lg:h-64'); // Adjusts height for various screen sizes
-
+            imgElement.classList.add('w-full', 'h-auto', 'max-h-64', 'sm:h-48', 'md:h-56', 'lg:h-64');
 
             // Open modal on image click
             imgElement.addEventListener('click', () => {
-                modalImage.src = src;
+                currentIndex = index;
+                updateModalImage();
                 modal.classList.remove('hidden');
                 modalImage.classList.remove('scale-150'); // Reset zoom
             });
@@ -86,7 +95,32 @@
             modalImage.classList.toggle('scale-150'); // Toggles zoom-in effect
             modalImage.classList.toggle('cursor-zoom-out'); // Change cursor when zoomed in
         });
-    </script>
 
+        // Previous Image functionality
+        prevImageButton.addEventListener('click', () => {
+            if (currentIndex > 0) {
+                currentIndex--;
+                updateModalImage();
+            }
+        });
+
+        // Next Image functionality
+        nextImageButton.addEventListener('click', () => {
+            if (currentIndex < images.length - 1) {
+                currentIndex++;
+                updateModalImage();
+            }
+        });
+
+        // Update modal image and button visibility
+        function updateModalImage() {
+            modalImage.src = images[currentIndex];
+            prevImageButton.classList.toggle('hidden', currentIndex === 0);
+            nextImageButton.classList.toggle('hidden', currentIndex === images.length - 1);
+        }
+    </script>
 </body>
+
+
+
 </html>
