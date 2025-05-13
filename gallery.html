@@ -49,6 +49,8 @@
         const end = 8847;
         const images = [];
         for (let i = start; i <= end; i++) {
+             const extension = (i <= 8719) ? 'jpg' : 'JPG';
+        images.push(`./images/gallery/IMG_${i}.${extension}`);
             images.push(`./images/gallery/IMG_${i}.JPG`);
         }
 
